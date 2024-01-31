@@ -1,4 +1,4 @@
-package edu.upvictoria.fpoo.estructurasRepetitivas.ejercicioUno;
+package edu.upvictoria.fpoo.estructurasSelectivas.ejercicioUno;
 
 import edu.upvictoria.fpoo.utilidades.Input;
 

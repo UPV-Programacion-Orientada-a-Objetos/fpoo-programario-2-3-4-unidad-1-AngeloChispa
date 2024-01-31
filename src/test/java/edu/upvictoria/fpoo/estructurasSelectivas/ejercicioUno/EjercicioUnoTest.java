@@ -1,4 +1,4 @@
-package edu.upvictoria.fpoo.estructurasRepetitivas.ejercicioUno;
+package edu.upvictoria.fpoo.estructurasSelectivas.ejercicioUno;
 
 import static org.junit.Assert.assertEquals;
 

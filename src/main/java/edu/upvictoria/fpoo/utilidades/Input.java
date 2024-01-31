@@ -38,5 +38,34 @@ public class Input {
 
     }
 
+    public long entradaLong(String mensaje){
+
+        long a = 0;
+        boolean bandera = true;
+
+        BufferedReader obj = new BufferedReader(new InputStreamReader(System.in));
+
+        while (bandera) {
+            System.out.print(mensaje);
+
+            try{
+
+                bandera = false;
+                a = Long.parseLong(obj.readLine());
+    
+            }catch(IOException | NumberFormatException e){
+    
+                bandera = true;
+                System.out.println("\n===============================");
+                System.out.println("Solo se aceptan números enteros");
+                System.out.println("===============================\n");
+            }
+            
+        }
+
+        return a;
+
+    }
+
 
 }
