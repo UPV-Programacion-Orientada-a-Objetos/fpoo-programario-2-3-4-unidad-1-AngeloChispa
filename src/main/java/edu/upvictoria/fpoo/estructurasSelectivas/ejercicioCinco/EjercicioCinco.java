@@ -35,7 +35,6 @@ public class EjercicioCinco {
         System.out.println("Ejercicio 5");
         System.out.println("===========\n");
 
-
         double a,b,c;
 
         Input entrada = new Input();
@@ -44,11 +43,8 @@ public class EjercicioCinco {
         b = entrada.entradaDouble("Ingresa otro número: ");
         c = entrada.entradaDouble("Ingresa un 3er número: ");
 
-        
-
-
+        System.out.println("El número mayor es: " + mayorTres(a, b, c));        
 
     }
-
 
 }

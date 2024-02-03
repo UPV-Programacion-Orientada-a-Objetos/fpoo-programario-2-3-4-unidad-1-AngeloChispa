@@ -67,5 +67,34 @@ public class Input {
 
     }
 
+    public String entradaString(String mensaje){
+
+        String a =  "";
+        boolean bandera = true;
+
+        BufferedReader obj = new BufferedReader(new InputStreamReader(System.in));
+
+        while (bandera) {
+            System.out.print(mensaje);
+
+            try{
+
+                bandera = false;
+                a = obj.readLine();
+    
+            }catch(IOException e){
+    
+                bandera = true;
+                System.out.println("\n====================");
+                System.out.println("Error algo salio mal");
+                System.out.println("====================\n");
+            }
+            
+        }
+
+        return a;
+
+    }
+
 
 }

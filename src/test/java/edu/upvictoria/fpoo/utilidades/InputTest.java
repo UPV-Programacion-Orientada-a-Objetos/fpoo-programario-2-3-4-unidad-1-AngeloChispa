@@ -27,4 +27,27 @@ public class InputTest {
 
     }
 
+    @Test
+    public void EntradaString(){
+
+        Input entrada = new Input();
+
+        System.setIn(new java.io.ByteArrayInputStream("Oal chavo\n".getBytes()));
+
+        assertEquals("Oal chavo", entrada.entradaString(null));
+
+    }
+
+    @Test
+    public void EntradaStringNumeros(){
+
+        Input entrada = new Input();
+
+        System.setIn(new java.io.ByteArrayInputStream("Tamarindo123\n".getBytes()));
+
+        assertEquals("Tamarindo123", entrada.entradaString(null));
+
+    }
+
+
 }
